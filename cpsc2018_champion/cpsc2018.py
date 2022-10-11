@@ -101,7 +101,7 @@ sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 batch_size = 64
 num_classes = 9
 epochs = 1000000000000000000000000000000000
-magicVector = np.load('./cpsc2018_champion/magicVector_test_val_strategy.npy', allow_pickle=True)
+magicVector = np.load('magicVector_test_val_strategy.npy', allow_pickle=True)
 leadsLabel = np.asarray(['I','II','III','aVR','aVL','aVF','V1','V2','V3','V4','V5','V6'])
 
 for fold in range(10):
